@@ -6,5 +6,19 @@
     "userFailure": {
       "username": "Test",
       "password" : "Test"
+    },
+    "signUpUser": {
+      "firstName": "Pex",
+      "lastName": "Paulo",
+      "username": "PexPaulo",
+      "password": "Test1234",
+      "confirmPassword": "Test1234"
+    },
+    "signUpWrongPassword": {
+      "firstName": "Pex",
+      "lastName": "Paulo",
+      "username": "PexPaulo",
+      "password": "T",
+      "confirmPassword": "T"
     }
   }

@@ -20,5 +20,24 @@
       "username": "PexPaulo",
       "password": "T",
       "confirmPassword": "T"
+    },
+
+    "searchNameTransaction": {
+      "name": "Kristian"
+    },
+
+    "amountTransaction": {
+      "amount": "35",
+      "wrongAmount": "Food"
+    },
+
+    "addNoteTransaction": {
+      "note": "Sushi dinner"
     }
+
+
+
+
+
+
   }

@@ -3,7 +3,7 @@ import LoginPage from '../pages/loginPage.js';
 
 const loginPage = new LoginPage();
 
-describe('Real World App Test', () => {
+describe('RWA Login & SignUp Test', () => {
 
   it('Login - Success', () => {
     loginPage.accessLoginPage();

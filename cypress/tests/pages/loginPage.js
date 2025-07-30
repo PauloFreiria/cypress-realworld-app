@@ -1,4 +1,4 @@
-import { last } from "lodash"
+
 
 class LoginPage {
     
@@ -56,7 +56,6 @@ class LoginPage {
     checkSignUpError() {
         cy.get(this.selectorsList().wrongPasswordFormAlert)
     }
-
 
 }
 

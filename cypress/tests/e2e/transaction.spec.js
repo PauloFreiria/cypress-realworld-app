@@ -16,7 +16,7 @@ describe('RWA Money Transaction Test', () => {
     transactionPage.accessTransactionPage();
     transactionPage.searchName(userData.searchNameTransaction.name);
     transactionPage.fillAmount(userData.amountTransaction.amount);
-    transactionPage.fillNote(userData.addNoteTransaction.note);
+    transactionPage.fillNote(userData.addNoteTransaction.note1);
     transactionPage.payTransaction();
 
   })
@@ -30,6 +30,19 @@ describe('RWA Money Transaction Test', () => {
     transactionPage.searchName(userData.searchNameTransaction.name);
     transactionPage.fillAmount(userData.amountTransaction.wrongAmount);
     transactionPage.checkAmountError();
+
+  })
+
+  it('Requesting Money - Success', () => {
+    loginPage.accessLoginPage();
+    loginPage.loginWithUser
+    loginPage.loginWithUser(userData.userSuccess.username, userData.userSuccess.password);
+
+    transactionPage.accessTransactionPage();
+    transactionPage.searchName(userData.searchNameTransaction.name);
+    transactionPage.fillAmount(userData.amountTransaction.requestAmount);
+    transactionPage.fillNote(userData.addNoteTransaction.note2);
+    transactionPage.requestMoneyButton();
 
   })
 

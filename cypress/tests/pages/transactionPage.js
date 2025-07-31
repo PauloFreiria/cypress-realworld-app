@@ -1,3 +1,4 @@
+import { request } from "http"
 
 
 class TransactionPage {
@@ -11,7 +12,7 @@ class TransactionPage {
             addNoteField: "[placeholder='Add a note']",
             payButton: "[data-test='transaction-create-submit-payment']",
             amountError: "[data-test='transaction-create-amount-input']",
-
+            requestButton: "[data-test='transaction-create-submit-request']",
     
         }
         return selectors
@@ -23,7 +24,7 @@ class TransactionPage {
     }
 
     searchName(name) {
-        cy.get(this.selectorsList().searchNameField).click()
+        cy.get(this.selectorsList().searchNameField).should('be.visible').click({force: true})
         cy.get(this.selectorsList().searchNameField).type(name)
         cy.get(this.selectorsList().nameSearched).click()
     }
@@ -47,6 +48,9 @@ class TransactionPage {
         cy.get(this.selectorsList().amountError)
     }
 
+    requestMoneyButton() {
+        cy.get(this.selectorsList().requestButton).click()
+    }
 
 }
 

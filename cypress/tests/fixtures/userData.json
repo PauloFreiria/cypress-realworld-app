@@ -28,11 +28,13 @@
 
     "amountTransaction": {
       "amount": "35",
-      "wrongAmount": "Food"
+      "wrongAmount": "Food",
+      "requestAmount": "1000"
     },
 
     "addNoteTransaction": {
-      "note": "Sushi dinner"
+      "note1": "Sushi dinner",
+      "note2": "Me pague, salafrário!"
     }
 
 
